@@ -1,0 +1,16 @@
+@import "../../utils/util.scss";
+// @import "../../utils/skin-black.scss";
+@import "../../utils/skin-white.scss";
+
+Page{
+  height:100%;
+}
+.section{
+  .set{
+    text-align: right;
+    text{
+      line-height: 30px;
+      padding-right:4px;
+    }
+  }
+}

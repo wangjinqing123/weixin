@@ -1,0 +1,142 @@
+@import "../../utils/util.scss";
+@import "../../utils/skin-black.scss";
+// @import "../../utils/skin-white.scss";
+.section{
+	height:100%;
+	box-sizing: border-box;
+
+	.userInfo{
+		padding-bottom:6px;
+		.item{
+			box-sizing: border-box;
+			&.head{
+
+				height:120rpx;
+				display: flex;
+				padding:18rpx 12rpx;
+				box-sizing: border-box;
+				view{
+					flex:1;
+
+					&.headImgBox{
+						align-self: center;
+						position: relative;
+						image{
+							border-radius: 50%;
+							height:84rpx;
+							width:84rpx;
+							position: absolute;
+							left:0;
+							top:0;
+							bottom:0;
+							right: 0;
+							margin: auto;
+						}
+					}
+					&.edit{
+						box-sizing: border-box;
+						font-size: 12px;
+
+						padding-top:20rpx;
+						div{
+							float: right;
+							border-radius:10px;
+							box-sizing: border-box;
+							width:160rpx;
+							display: flex;
+							image{
+								height:40rpx;
+								width:40rpx;
+								border-radius:50%;
+							}
+							text{
+								transform: scale(0.8);
+								line-height: 40rpx;
+								flex: 1;
+								text-align: right;
+
+							}
+						}
+
+					}
+				}
+			}
+			&.userName{
+				text-align: center;
+				height:60rpx;
+				line-height: 60rpx;
+			}
+			&.userID{
+				line-height: 40rpx;
+				height:40rpx;
+				text-align: center;
+				font-size:24rpx;
+			}
+			&.biaoqian{
+				line-height: 40rpx;
+				height:40rpx;
+				text-align: center;
+				font-size:24rpx;
+			}
+			&.guanzhufensi{
+				height:80rpx;
+				display: flex;
+				text-align: center;
+				.middle{
+					height:50%;
+					margin-top:20rpx;
+				}
+				.one{
+					font-size:24rpx;
+
+					flex:1;
+					display: flex;
+					flex-direction: column;
+					text{
+						transform: scale(0.98,0.98);
+						flex:1;
+					}
+				}
+				.two{
+					font-size:24rpx;
+					flex:1;
+					display: flex;
+					flex-direction: column;
+					text{
+						transform: scale(0.98,0.98);
+						flex:1;
+					}
+				}
+			}
+			&.qiehuan{
+				width:100%;
+				height:50rpx;
+				border-radius:3px;
+				display: flex;
+				box-sizing: border-box;
+
+				.inner-item{
+					flex:1;
+					text-align: center;
+					position: relative;
+					image{
+						height:12px;
+						width:12px;
+						position: absolute;
+						right: 16rpx;
+						top:10rpx;
+					}
+					text{
+						font-size:24rpx;
+						line-height: 24rpx;
+					}
+				}
+			}
+		}
+		.box{
+			width:100%;
+			padding:0 10px;
+			box-sizing: border-box;
+		}
+	}
+}

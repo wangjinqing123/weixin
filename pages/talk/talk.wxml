@@ -1,0 +1,46 @@
+<import src="/tpls/talkCell.wxml"/>
+
+
+<view class="container-box">
+
+  <div class="top-line"></div>
+  <view class="section background2">
+   <scroll-view class="talk-scroll" scroll-y="{{true}}"  bindscrolltoupper="talkFreshList" bindscrolltolower="talkLoadList"  upper-threshold="0" lower-threshold="1" scroll-top="{{talkScrollTop?1:0}}">
+
+    <view class="section-inner">
+
+      <view class="more" hidden="{{talkRefreshHidden}}">
+        <button plain="true" loading="true"></button>
+      </view>
+      
+
+  	  <swiper class="talk-swiper" indicator-dots="{{indicatorDots}}" current="{{currentIndex}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperSlide">
+  	     <block wx:for="{{imgUrls}}">
+  	        <swiper-item animation="{{animationData}}">
+  	          <image src="{{item}}" class="slide-image"/>
+  	        </swiper-item>
+  	     </block>
+  	  </swiper>
+
+  	  <view class="talkList">
+  		  <view wx:for="{{item}}" wx:for-item="value">
+  		  	<view class="talkListTitle">
+  			  	<template is="talkTitleCell" data="{{...value.titleCell}}" wx:if="{{value.titleCell?1:0}}"></template>
+  			</view>
+  		  	<template is="talkCell" data="{{...value, item ,index}}"></template>
+  		  </view>
+  	  </view>
+
+
+      <view class="more" hidden="{{talkLoadMoreHidden}}">
+        <button plain="true" loading="true"></button>
+      </view>
+    </view>
+  </scroll-view>
+
+
+  </view>
+  <div class="bottom-line">
+
+  </div>
+</view>

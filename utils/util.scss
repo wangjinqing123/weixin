@@ -1,0 +1,45 @@
+.container-box{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  box-sizing: border-box;
+}
+.top-line{
+  position: fixed;
+  top:0;
+  width:100%;
+  height:0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important;
+}
+.bottom-line{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  height:0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important;
+}
+.section{
+  width:100%;
+  box-sizing: border-box;
+  /*flex: 1;*/
+  /*padding:20rpx;*/
+}
+.paddingLR20{
+  padding-left:20rpx;
+  padding-right:20rpx;
+}
+.ellipsis-one{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.kong{
+  height:40px;
+  width:100%;
+  display: block;
+}

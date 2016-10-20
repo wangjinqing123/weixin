@@ -1,0 +1,31 @@
+<import src="../../tpls/setCell.wxml"/>
+
+<view class="container-box">
+
+  <div class="top-line"></div>
+  <view class="section background2">
+    <scroll-view scroll-y="{{true}}">
+
+      <block wx:for="{{settingData}}" wx:for-item="value">
+        <view class="setting-list borderTop borderBottom">
+          <block wx:for="{{value.list}}" wx:for-item="item">
+            <template is="{{value.list.length-1 != index?'settingCell':'settingCell2'}}" data="{{item}}"></template>
+          </block>
+        </view>
+      </block>
+
+
+      <view class="setting-list borderTop borderBottom background1">
+        <view class="quitButton">
+          <text class="textColor3">退出登录</text>
+        </view>
+      </view>
+      <view class="kong">
+
+      </view>
+    </scroll-view>
+  </view>
+  <div class="bottom-line">
+
+  </div>
+</view>

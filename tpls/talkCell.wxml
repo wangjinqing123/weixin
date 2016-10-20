@@ -1,0 +1,29 @@
+<template  name="talkCell">
+	<template name="talkTitleCell">
+
+		<view class="border1"></view>
+
+		<view class="talkTitleCellTemplate background">
+			<view class="item title"><text class="textColor4">{{title}}</text></view>
+			<view class="item update" wx:if="{{isFreshHidden}}"><image class="textColor4" src="/images/talk/shuaxin.png"></image></view>
+			<view class="item more"><text class="textColor4">{{more}}</text></view>
+			<view class="item moreI" wx:if="{{isMoreIHidden}}"><text class="textColor4">></text></view>
+		</view>
+
+		<view class="border1"></view>
+
+	</template>
+  <view class="talkCellTemplate background1">
+
+		<view class="inner">
+  		<view>
+  			<text class="name textColor3">{{name}}</text>
+  		</view>
+    		<view>
+    			<text class="liulanC textColor4">{{liulan}} 次浏览</text>
+    		</view>
+  		</view>
+  		<view class="border1" wx:if="{{(item.length-1 == index || item[index].kindID != item[index+1].kindID)?0:1}}"></view>
+
+  </view>
+</template>

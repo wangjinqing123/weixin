@@ -1,0 +1,125 @@
+@import "../../utils/util.scss";
+// @import "../../utils/skin-black.scss";
+@import "../../utils/skin-white.scss";
+
+.index-scroll{
+  height:100%;
+}
+
+.section{
+  width:100%;
+  box-sizing: border-box;
+}
+.index-swiper{
+  height:100%;
+}
+.item{
+  box-sizing: border-box;
+  // border-bottom: 1px solid #ddd;
+  margin-bottom:12rpx;
+}
+.item .tuijian-box{
+  margin-top:1rpx;
+}
+.item .tuijian-box text{
+  font-size: 24rpx;
+}
+.item .tuijian-box .tuijian{
+  margin-left: 8rpx;
+}
+.item .title{
+  text-align: center;
+  font-size:28rpx;
+  margin-top:18rpx;
+}
+
+.item .user-info{
+  box-sizing: border-box;
+  display: flex;
+  margin-top:20rpx;
+
+}
+
+.item .user-info .head-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.item .user-info .head-box .head-img{
+  width:80rpx;
+  height:80rpx;
+  align-self: center;
+}
+.item .user-info .head-box text{
+  font-size: 24rpx;
+  margin-top:18rpx;
+}
+.item .user-info .head-box image{
+  border-radius:50%;
+}
+.item .user-info .user-icon{
+  margin-top:12rpx;
+  width:36rpx;
+  height:36rpx;
+}
+.item .user-info .other{
+  width:36rpx;
+  height:36rpx;
+  margin-top:12rpx;
+}
+
+.item .image-box{
+  width:100%;
+  background:#EEDFCC;
+  height:600rpx;
+  margin-top:28rpx;
+  font-size: 0;
+}
+.item .image-box image{
+  width:100%;
+  display: block;
+  height:100%;
+}
+.item .text-box text{
+  font-size:24rpx;
+  line-height: 44rpx;
+}
+.item .bottom{
+  margin:44rpx 0rpx 30rpx;
+  display: flex;
+
+}
+.item .bottom .time{
+  font-size:18rpx;
+}
+
+.item .bottom-item{
+  flex: 1;
+  display: flex;
+}
+.item .bottom .bottom-item view{
+  flex:1;
+  display: flex;
+}
+
+.item .bottom .bottom-item image{
+  width:36rpx;
+  height:36rpx;
+  flex:1;
+}
+.item .bottom .bottom-item text{
+  font-size:24rpx;
+  line-height: 36rpx;
+  text-align: right;
+  margin-right: 6rpx;
+  flex: 2;
+}
+.item .bottom .right text{
+  text-align: left;
+}
+.section .more button{
+  font-size:28rpx;
+  border:0;
+}

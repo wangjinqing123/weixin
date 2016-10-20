@@ -1,0 +1,151 @@
+.container-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box; }
+
+.top-line {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important; }
+
+.bottom-line {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important; }
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+  /*flex: 1;*/
+  /*padding:20rpx;*/ }
+
+.paddingLR20 {
+  padding-left: 20rpx;
+  padding-right: 20rpx; }
+
+.ellipsis-one {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.kong {
+  height: 40px;
+  width: 100%;
+  display: block; }
+
+.textColor {
+  color: #111; }
+
+.textColor2 {
+  color: #666; }
+
+.textColor3 {
+  color: #333; }
+
+.textColor4 {
+  color: #999; }
+
+.textColor5 {
+  color: #1C1C1C; }
+
+.textColor6 {
+  color: #fff; }
+
+.background1 {
+  background: #fff; }
+
+.background2 {
+  background: #f4f4f4; }
+
+.background3 {
+  background: #ddd; }
+
+.background4 {
+  background: #1C1C1C; }
+
+.background5 {
+  background: #1C1C1C; }
+
+.border1 {
+  border: 1px solid #ddd; }
+
+.border2 {
+  border: 1px solid #bbb; }
+
+.border3 {
+  border: 1px solid #999; }
+
+.border4 {
+  border: 1px solid #1C1C1C; }
+
+.border5 {
+  border: 1px solid #1C1C1C; }
+
+.borderLeft {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #999; }
+
+.borderLeft2 {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #1C1C1C; }
+
+.borderBottom {
+  border-bottom: 1rpx solid #ddd; }
+
+.borderTop {
+  border-top: 1rpx solid #ddd; }
+
+.section {
+  width: 100%;
+  height: 100%; }
+  .section scroll-view {
+    height: 100%; }
+    .section scroll-view .setting-list {
+      margin-top: 16px;
+      box-sizing: border-box; }
+      .section scroll-view .setting-list .quitButton {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        width: 100%; }
+
+.settingCell {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px; }
+  .settingCell .cellInner {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    line-height: 40px; }
+    .settingCell .cellInner .item {
+      font-size: 14px;
+      width: 100%;
+      flex: 1; }
+      .settingCell .cellInner .item.left {
+        text-align: left;
+        flex: 8; }
+      .settingCell .cellInner .item.right {
+        text-align: right;
+        margin-right: 8px; }
+        .settingCell .cellInner .item.right .switch {
+          float: right; }
+      .settingCell .cellInner .item.midItem {
+        flex: 6; }
+        .settingCell .cellInner .item.midItem switch {
+          margin-top: 4px; }

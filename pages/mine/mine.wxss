@@ -1,0 +1,220 @@
+.container-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box; }
+
+.top-line {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important; }
+
+.bottom-line {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0rpx;
+  border-top: 1rpx solid #ddd;
+  z-index: 999 !important; }
+
+.section {
+  width: 100%;
+  box-sizing: border-box;
+  /*flex: 1;*/
+  /*padding:20rpx;*/ }
+
+.paddingLR20 {
+  padding-left: 20rpx;
+  padding-right: 20rpx; }
+
+.ellipsis-one {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.kong {
+  height: 40px;
+  width: 100%;
+  display: block; }
+
+.textColor {
+  color: #aaa; }
+
+.textColor2 {
+  color: #999; }
+
+.textColor3 {
+  color: #bbb; }
+
+.textColor4 {
+  color: #777; }
+
+.textColor5 {
+  color: #dedede; }
+
+.textColor6 {
+  color: #111; }
+
+.background {
+  background: #090909; }
+
+.background1 {
+  background: #111; }
+
+.background2 {
+  background: #2c2c2c; }
+
+.background3 {
+  background: #222; }
+
+.background4 {
+  background: #1C1C1C; }
+
+.background5 {
+  background: #579; }
+
+.border1 {
+  border: 1rpx solid #444; }
+
+.border2 {
+  border: 1rpx solid #333; }
+
+.border3 {
+  border: 1rpx solid #222; }
+
+.border4 {
+  border: 1rpx solid #1C1C1C; }
+
+.border5 {
+  border: 1rpx solid #579; }
+
+.borderLeft {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #234; }
+
+.borderLeft2 {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #234; }
+
+.borderBottom {
+  border-bottom: 1rpx solid #222; }
+
+.borderTop {
+  border-top: 1rpx solid #222; }
+
+.section {
+  height: 100%;
+  box-sizing: border-box; }
+  .section .userInfo {
+    padding-bottom: 6px; }
+    .section .userInfo .item {
+      box-sizing: border-box; }
+      .section .userInfo .item.head {
+        height: 120rpx;
+        display: flex;
+        padding: 18rpx 12rpx;
+        box-sizing: border-box; }
+        .section .userInfo .item.head view {
+          flex: 1; }
+          .section .userInfo .item.head view.headImgBox {
+            align-self: center;
+            position: relative; }
+            .section .userInfo .item.head view.headImgBox image {
+              border-radius: 50%;
+              height: 84rpx;
+              width: 84rpx;
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto; }
+          .section .userInfo .item.head view.edit {
+            box-sizing: border-box;
+            font-size: 12px;
+            padding-top: 20rpx; }
+            .section .userInfo .item.head view.edit div {
+              float: right;
+              border-radius: 10px;
+              box-sizing: border-box;
+              width: 160rpx;
+              display: flex; }
+              .section .userInfo .item.head view.edit div image {
+                height: 40rpx;
+                width: 40rpx;
+                border-radius: 50%; }
+              .section .userInfo .item.head view.edit div text {
+                transform: scale(0.8);
+                line-height: 40rpx;
+                flex: 1;
+                text-align: right; }
+      .section .userInfo .item.userName {
+        text-align: center;
+        height: 60rpx;
+        line-height: 60rpx; }
+      .section .userInfo .item.userID {
+        line-height: 40rpx;
+        height: 40rpx;
+        text-align: center;
+        font-size: 24rpx; }
+      .section .userInfo .item.biaoqian {
+        line-height: 40rpx;
+        height: 40rpx;
+        text-align: center;
+        font-size: 24rpx; }
+      .section .userInfo .item.guanzhufensi {
+        height: 80rpx;
+        display: flex;
+        text-align: center; }
+        .section .userInfo .item.guanzhufensi .middle {
+          height: 50%;
+          margin-top: 20rpx; }
+        .section .userInfo .item.guanzhufensi .one {
+          font-size: 24rpx;
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+          .section .userInfo .item.guanzhufensi .one text {
+            transform: scale(0.98, 0.98);
+            flex: 1; }
+        .section .userInfo .item.guanzhufensi .two {
+          font-size: 24rpx;
+          flex: 1;
+          display: flex;
+          flex-direction: column; }
+          .section .userInfo .item.guanzhufensi .two text {
+            transform: scale(0.98, 0.98);
+            flex: 1; }
+      .section .userInfo .item.qiehuan {
+        width: 100%;
+        height: 50rpx;
+        border-radius: 3px;
+        display: flex;
+        box-sizing: border-box; }
+        .section .userInfo .item.qiehuan .inner-item {
+          flex: 1;
+          text-align: center;
+          position: relative; }
+          .section .userInfo .item.qiehuan .inner-item image {
+            height: 12px;
+            width: 12px;
+            position: absolute;
+            right: 16rpx;
+            top: 10rpx; }
+          .section .userInfo .item.qiehuan .inner-item text {
+            font-size: 24rpx;
+            line-height: 24rpx; }
+    .section .userInfo .box {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box; }

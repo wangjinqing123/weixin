@@ -1,0 +1,56 @@
+<import src="/tpls/cell.wxml"/>
+
+
+<view class="container-box background2">
+
+  <div class="top-line"></div>
+
+  <view class="list-loading">
+    <loading hidden="{{loadingHidden}}">
+      加载中...
+    </loading>
+  </view>
+  <swiper class="index-swiper" indicator-dots="{{false}}" bindchange="swiperChange" current="{{currentPage}}">
+    <swiper-item>
+      <scroll-view class="index-scroll" scroll-y="{{true}}" bindscrolltoupper="freshList" bindscrolltolower="loadList"  upper-threshold="0" lower-threshold="1" scroll-top="{{scrollTop?1:0}}">
+
+        <view class="section">
+          <view class="more" hidden="{{refreshHidden}}">
+            <button plain="true" loading="true">努力刷新中...</button>
+          </view>
+
+          <view class="item background1 borderBottom" wx:for="{{list}}" wx:for-item="value">
+            <template is="cell" data="{{...value}}"/>
+          </view>
+
+          <view class="more" hidden="{{loadingMoreHidden}}">
+            <button plain="true" loading="true">努力加载中...</button>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+
+    <swiper-item>
+      <scroll-view class="index-scroll" scroll-y="{{true}}" bindscrolltoupper="freshList2" bindscrolltolower="loadList2"  upper-threshold="0" lower-threshold="1" scroll-top="{{scrollTop2?1:0}}">
+
+        <view class="section">
+          <view class="more" hidden="{{refreshHidden2}}">
+            <button plain="true" loading="true">努力刷新中...</button>
+          </view>
+
+          <view class="item background1" wx:for="{{list2}}" wx:for-item="value">
+            <template is="cell" data="{{...value}}"/>
+          </view>
+
+          <view class="more" hidden="{{loadingMoreHidden2}}">
+            <button plain="true" loading="true">努力加载中...</button>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+  <div class="bottom-line"></div>
+</view>

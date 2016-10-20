@@ -1,0 +1,10 @@
+<view class="container-box">
+
+  <div class="top-line"></div>
+  <view class="section">
+    消息
+  </view>
+  <div class="bottom-line">
+
+  </div>
+</view>

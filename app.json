@@ -1,0 +1,63 @@
+{
+  "pages":[
+    "pages/fire/friends",
+    "pages/talk/talk",
+    "pages/message/message",
+    "pages/box/box",
+    "pages/mine/mine",
+    "pages/settings/setting"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"#272636",
+    "backgroundColor":"#fff",
+    "enablePullDownRefresh":false
+  },
+
+  "tabBar": {
+      "color":"#a9b7b7",
+      "selectedColor":"#272636",
+      "backgroundColor":"#fefefe",
+      "borderStyle":"white",
+      "list": [
+        {
+          "pagePath": "pages/fire/friends",
+          "text": "火柴",
+          "iconPath":"images/footer/fire2.png",
+          "selectedIconPath":"images/footer/fire.png"
+        },
+        {
+          "pagePath": "pages/talk/talk",
+          "text": "话题",
+          "iconPath":"images/footer/talk2.png",
+          "selectedIconPath":"images/footer/talk.png"
+        },
+        {
+          "pagePath":"pages/message/message",
+          "text":"消息",
+          "iconPath":"images/footer/message2.png",
+          "selectedIconPath":"images/footer/message.png"
+        },
+         {
+          "pagePath": "pages/box/box",
+          "text": "盒子",
+          "iconPath":"images/footer/box2.png",
+          "selectedIconPath":"images/footer/box.png"
+        },
+        {
+          "pagePath":"pages/mine/mine",
+          "text":"我",
+          "iconPath":"images/footer/me2.png",
+          "selectedIconPath":"images/footer/me.png"
+        }
+      ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket":10000,
+    "uploadFile":10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

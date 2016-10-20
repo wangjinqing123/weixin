@@ -1,0 +1,28 @@
+[
+ {
+	 "userID":"12345678",
+	 "userName":"wang",
+	 "guanzhu":9,
+	 "fensi":1,
+	 "headImg":"/images/mine/mine.png",
+	 "sex":"",
+	 "city":"",
+	 "xingQuXiang":"",
+	 "signName":"",
+	 "phone":"18359928557",
+	 "password":"123"
+ },
+ {
+	 "userID":"87654321",
+	 "userName":"zhang",
+	 "guanzhu":6,
+	 "fensi":4,
+	 "headImg":"/images/mine/mine.png",
+	 "sex":"",
+	 "city":"",
+	 "xingQuXiang":"",
+	 "signName":"",
+	 "phone":"13141592654",
+	 "password":"321"
+ }
+]

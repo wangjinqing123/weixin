@@ -1,0 +1,12 @@
+<view class="container-box">
+
+  <div class="top-line"></div>
+  <view class="section">
+
+    <navigator url="../settings/setting" hover-class="navigator-hover">
+      <view class="set textColor5"><text>{{set}}</text></view>
+    </navigator>
+
+  </view>
+  <div class="bottom-line"></div>
+</view>

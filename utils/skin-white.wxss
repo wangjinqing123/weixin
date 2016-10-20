@@ -1,0 +1,65 @@
+.textColor {
+  color: #111; }
+
+.textColor2 {
+  color: #666; }
+
+.textColor3 {
+  color: #333; }
+
+.textColor4 {
+  color: #999; }
+
+.textColor5 {
+  color: #1C1C1C; }
+
+.textColor6 {
+  color: #fff; }
+
+.background1 {
+  background: #fff; }
+
+.background2 {
+  background: #f4f4f4; }
+
+.background3 {
+  background: #ddd; }
+
+.background4 {
+  background: #1C1C1C; }
+
+.background5 {
+  background: #1C1C1C; }
+
+.border1 {
+  border: 1px solid #ddd; }
+
+.border2 {
+  border: 1px solid #bbb; }
+
+.border3 {
+  border: 1px solid #999; }
+
+.border4 {
+  border: 1px solid #1C1C1C; }
+
+.border5 {
+  border: 1px solid #1C1C1C; }
+
+.borderLeft {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #999; }
+
+.borderLeft2 {
+  display: block;
+  height: 100%;
+  width: 0px;
+  border-left: 1px solid #1C1C1C; }
+
+.borderBottom {
+  border-bottom: 1rpx solid #ddd; }
+
+.borderTop {
+  border-top: 1rpx solid #ddd; }

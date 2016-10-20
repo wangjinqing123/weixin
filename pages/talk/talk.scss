@@ -1,0 +1,76 @@
+@import "utils/util.scss";
+// @import "utils/skin-black.scss";
+@import "../../utils/skin-white.scss";
+
+Page{
+  width:100%;
+  height:100%;
+}
+.talk-swiper{
+  width:100%;
+  height:400rpx;
+}
+.slide-image{
+  width:100%;
+  height:100%;
+}
+.section {
+	height:100%;
+}
+.section .talk-scroll{
+	height:100%;
+}
+.section .more button{
+	border:0;
+}
+.border{
+	border-bottom:1rpx solid #ddd;
+	height:0px;
+	width:100%;
+}
+
+.talkList{
+	font-family: helvetica;
+	border-bottom: 1rpx solid #ddd;
+	font-size:16px;
+	.talkCellTemplate{
+		padding:10px 0px 0px 12px;
+		box-sizing: border-box;
+		.inner{
+			padding-bottom:8px;
+			box-sizing:border-box;
+
+			.name{
+
+			}
+			.liulanC{
+				font-size:12px;
+			}
+		}
+	}
+
+}
+.talkListTitle{
+
+	.talkTitleCellTemplate{
+		padding:16px 10px 12px 12px;
+		display: flex;
+		.item{
+			display: inline;
+			margin-left:6px;
+			font-size:12px;
+			&.title{
+				flex: 1;
+				font-size:16px;
+        margin-left: 0px;
+			}
+
+			&.update{
+				image{
+					width:14px;
+					height:14px;
+				}
+			}
+		}
+	}
+}

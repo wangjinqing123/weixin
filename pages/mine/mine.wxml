@@ -1,0 +1,56 @@
+
+<view class="container-box">
+
+  <div class="top-line"></div>
+  <view class="section background1">
+  	<view class="userInfo background1 borderBottom">
+  		<view class="item head">
+        <view></view>
+        <view class="headImgBox">
+          <image class="background3" src="{{user.headImg}}"></image>
+        </view>
+        <view class="edit">
+          <div class="border2">
+            <image class="background1" src="{{stable.editIcon}}"></image>
+            <text class="textColor4">{{stable.edit}}</text>
+          </div>
+        </view>
+      </view>
+  		<view class="item userName textColor2"><text>{{user.userName}}</text></view>
+  		<view class="item userID textColor4"><text>ID:{{user.userID}}</text></view>
+  		<view class="item biaoqian textColor2"><text>{{stable.setSign}}</text></view>
+  		<view class="item guanzhufensi">
+  			<view class="one"><text class="textColor3">{{user.guanzhu}}</text><text class="textColor3">{{stable.guanzhu}}</text></view>
+        <view class="borderLeft middle"></view>
+        <view class ="two"><text class="textColor3">{{user.fensi}}</text><text class="textColor3">{{stable.fensi}}</text></view>
+  		</view>
+      <view class="box">
+    		<view class="item qiehuan border5">
+          <!--  -->
+    			<view class="inner-item {{tab.tabBg}}" data-name="one" bindtap="changeTab">
+            <text data-name="one" class="{{tab.tabTextColor}}">{{stable.innerItem[0]}}</text>
+            <image data-name="one" src="{{stable.xialaImg}}"></image>
+          </view>
+          <!--  -->
+          <view class="borderLeft2"></view>
+          <!--  -->
+    			<view class="inner-item {{tab.tabBg2}}" data-name="two" bindtap="changeTab">
+            <text data-name="two" class="{{tab.tabTextColor2}}">{{stable.innerItem[1]}}</text>
+            <image data-name="two" src="{{stable.xialaImg}}"></image>
+          </view>
+          <!--  -->
+          <view class="borderLeft2"></view>
+          <!--  -->
+    			<view class="inner-item {{tab.tabBg3}}" data-name="three" bindtap="changeTab">
+            <text data-name="three" class="{{tab.tabTextColor3}}">{{stable.innerItem[2]}}</text>
+            <image data-name="three" src="{{stable.xialaImg}}"></image>
+          </view>
+    		</view>
+      </view>
+  	</view>
+  </view>
+
+  <div class="bottom-line">
+
+  </div>
+</view>

@@ -1,0 +1,46 @@
+<template name="cell">
+  <view class="tuijian-box paddingLR20">
+    <text class="tuijianren textColor" wx:if="{{tuijianzhe}}">{{tuijianzhe}}</text>
+    <text class="tuijian textColor2" wx:if="{{tuijian}}">{{tuijian}}</text>
+  </view>
+  <view class="title paddingLR20 textColor">
+    <text class="ellipsis-one">{{title}}</text>
+  </view>
+  <view class="user-info paddingLR20">
+    <view class="user-box">
+      <image class="user-icon" src="{{userIcon}}"></image>
+    </view>
+    <view class="head-box">
+      <image class="head-img" src="{{headimg}}"></image>
+      <text class="user-name textColor2">{{username}}</text>
+    </view>
+    <view>
+      <image class="other" src="{{xiala}}"></image>
+    </view>
+  </view>
+  <view class="image-box" wx:if="{{image!=undefined}}">
+    <image src="{{image}}"></image>
+  </view>
+  <view class="text-box paddingLR20" wx:if="{{desc}}">
+    <text class="textColor3">{{desc}}</text>
+  </view>
+  <view class="bottom paddingLR20">
+    <view class="bottom-item right">
+      <text class="time textColor2">{{time}}</text>
+    </view>
+    <view class="bottom-item">
+      <view class="zhuanfa-box">
+        <text class="zhuanfa textColor4">{{zhuanfaCount}}</text>
+        <image src="{{zhuanfa}}"></image>
+      </view>
+      <view class="pinglun-box">
+        <text class="pinglun textColor4">{{pinglunCount}}</text>
+        <image src="{{pinglun}}"></image>
+      </view>
+      <view class="zan-box">
+        <text class="zan textColor4">{{zanCount}}</text>
+        <image src="{{zan}}"></image>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,23 @@
+<template name="settingCell">
+  <view class="settingCell background1">
+    <view class="cellInner">
+      <text class="item left textColor3">{{item}}</text>
+      <view class="item right textColor3 midItem">
+        <switch wx:if="{{item == '夜间模式'}}" class="switch" bindchange="switchChange"/>
+      </view>
+      <text class="item right textColor4">></text>
+    </view>
+    <view class="borderBottom" style="height:0;"></view>
+
+  </view>
+</template>
+
+<template name="settingCell2">
+  <view class="settingCell background1">
+    <view class="cellInner">
+      <text class="item left textColor3">{{item}}</text>
+      <view class="item right textColor3"></view>
+      <text class="item right textColor4">></text>
+    </view>
+  </view>
+</template>
